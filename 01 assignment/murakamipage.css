@@ -11,7 +11,7 @@ table#header {
 }
 
 body {
-   background: url("haruki-murakami-1.jpg") no-repeat;
+   background: url("blackbackground.jpg") no-repeat;
 }
 
 p {
@@ -57,11 +57,13 @@ div#navigation th a:visited{
    text-decoration: none;
 } 
 div#navigation th#headercenter {
+      font-size: 40px;
       max-width: 50%;
       border-bottom: solid white 2px;
       border-left: double white 10px;
       border-right: double white 10px;
       font-weight: thin;
+      font-style: none;
 }
 
 p {
@@ -70,8 +72,7 @@ p {
    color: white;
    top: 10em;
    left: 1em;
-   width: 280px;
-   height: 400px;
+   width: 700px;
    margin-left: 6em;
    margin-right: auto;
 }
@@ -96,4 +97,14 @@ div#intro a:hover {
 }   
 div#intro a:visited {
    color: white;
-}   
+}  
+
+div#image img {
+   float: right;
+   margin-right: 5em;
+   margin-top: 8em;
+}
+
+
+
+
