@@ -50,18 +50,32 @@ div#navigation th#headerleft {
    text-decoration: none;
    font-weight: thin;
 }
-div#navigation th a:visited{ 
+div#navigation a:link { 
+   margin: 0;  
+   color: white;
+   text-decoration: none;
+
+} 
+div#navigation a:visited{ 
    margin: 0; 
    padding: 1em; 
    color: white;
    text-decoration: none;
 } 
+
 div#navigation th#headercenter {
       max-width: 50%;
       border-bottom: solid white 2px;
       border-left: double white 10px;
       border-right: double white 10px;
       font-weight: thin;
+}
+
+form#search {
+   vertical-align: center;
+   padding-left: 5em;
+   padding-top: 2em;
+   color: white;
 }
 
 p {
