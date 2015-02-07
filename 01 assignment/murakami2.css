@@ -60,15 +60,18 @@ div#navigation a:visited{
 div#navigation a {
     color: white;
     text-decoration: none;
-    border-color: black;
    -webkit-transition-property: color;
    -webkit-transition-duration: 0.4s;
    -webkit-transition-timing-function: linear;
    -webkit-transition-delay: 0.1s;
+   background: transparent;
+   -webkit-transition: background 0.8s ease-out 0.1s;
 }
 
 div#navigation a:hover{ 
    color: red;
+   background: white;
+   padding: 0.1em;
 } 
 
 div#navigation th#headercenter {
@@ -89,12 +92,14 @@ div#navigation th#headercenter {
    -webkit-transition-duration: 0.4s;
    -webkit-transition-timing-function: linear;
    -webkit-transition-delay: 0.1s;
-
+   box-shadow: 0;
+   -webkit-transition: box-shadow 2s;
 }
 
 #headercenter:hover{
   font-size: fill;
   width: 70%;
+  box-shadow: 0 0 20px white;
 }
   
 /*END HEADER SECTION*/
@@ -121,7 +126,15 @@ div#navigation th#headercenter {
    font-family: lato;
    font-size: 12px;
    padding-left: 0em;
+   background-color: transparent;
+   -webkit-transition: background-color 1s ease 0.1s;
 }
+
+.left p#descrip:hover {
+  background-color: red;
+}
+
+
 div#intro img {
    float: left;
    padding-top: 0.2em;
@@ -177,6 +190,7 @@ div#blogpost img {
    -webkit-transition-duration: 0.4s;
    -webkit-transition-timing-function: linear;
    -webkit-transition-delay: 0.1s;
+
 }
 
 .main img:hover {
@@ -231,7 +245,7 @@ div#footer input{
 }
 
 div#footer input:hover {
-  background: yellow;
+  background: white;
   width: 20%;
 }
 

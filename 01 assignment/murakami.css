@@ -64,10 +64,14 @@ div#navigation a {
    -webkit-transition-duration: 0.4s;
    -webkit-transition-timing-function: linear;
    -webkit-transition-delay: 0.1s;
+   background: transparent;
+   -webkit-transition: background 0.8s ease-out 0.1s;
 }
 
 div#navigation a:hover{ 
    color: red;
+   background: white;
+   padding: 0.4em;
 } 
 
 div#navigation th#headercenter {
@@ -86,12 +90,14 @@ div#navigation th#headercenter {
    -webkit-transition-duration: 0.4s;
    -webkit-transition-timing-function: linear;
    -webkit-transition-delay: 0.1s;
+   box-shadow: 0;
+   -webkit-transition: box-shadow 1s;
 
 }
 
 #headercenter:hover{
   width: 60%;
-  border-color: red
+  box-shadow: 0 0 20px white;
 }
   
 /*END HEADER SECTION*/
@@ -120,6 +126,12 @@ div#navigation th#headercenter {
    font-size: 12px;
    padding-left: 1em;
    padding-top: -0.2em;
+   background-color: transparent;
+   -webkit-transition: background-color 1s ease 0.1s;
+}
+
+.left p#descrip:hover {
+  background-color: red;
 }
 
 div#intro img {
@@ -236,7 +248,7 @@ div#footer input{
 }
 
 div#footer input:hover {
-  background: yellow;
+  background: white;
   width: 20%;
 }
 
