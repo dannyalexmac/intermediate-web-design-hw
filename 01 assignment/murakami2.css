@@ -14,13 +14,13 @@ body {
     position:absolute;
     left:0; right:0;
     height: 92px;
+    z-index: 10;
 }
 table#header {
    font-family: lato;
    font-weight: thin;
    color: white;
    background-color: black 0.4;
-   text-decoration: none;
 }
 div#navigation th#headerright {
    font-family: lato;
@@ -32,7 +32,6 @@ div#navigation th#headerright {
    color: white;
    margin-left: auto;
    margin-right: auto;
-   text-decoration: underline;
    font-weight: thin;
 }
 div#navigation th#headerleft {
@@ -44,39 +43,52 @@ div#navigation th#headerleft {
    font-weight: bold; 
    font-size: large; 
    color: white;
-   text-decoration: underline;
    font-weight: thin;
 }
-div#navigation a:link { 
-   margin: 0;  
-   color: white;
-   text-decoration: none;
 
-} 
 div#navigation a:visited{ 
    margin: 0; 
    padding: 1em; 
    color: white;
-   text-decoration: none;
+} 
+
+div#navigation a {
+    color: white;
+    text-decoration: none;
+    border-color: black;
+   -webkit-transition-property: color;
+   -webkit-transition-duration: 0.4s;
+   -webkit-transition-timing-function: linear;
+   -webkit-transition-delay: 0.1s;
+}
+
+div#navigation a:hover{ 
+   color: red;
 } 
 
 div#navigation th#headercenter {
-      font-size: 30px;
       max-width: 50%;
       border-bottom: solid white 2px;
       border-left: double white 10px;
       border-right: double white 10px;
       font-weight: thin;
+      font-size: 25px;
 }
-div#intro a:link {
-   color: red;
-}   
-div#intro a:hover {
-   color: white;
-}   
-div#intro a:visited {
-   color: white;
-}   
+
+#headercenter {
+  width: 50%;
+   -webkit-transition-property: width;
+   -webkit-transition-duration: 0.4s;
+   -webkit-transition-timing-function: linear;
+   -webkit-transition-delay: 0.1s;
+
+}
+
+#headercenter:hover{
+  width: 60%;
+  border-color: red
+}
+  
 /*END HEADER SECTION*/
 
 
@@ -106,6 +118,18 @@ div#intro img {
    float: left;
    padding-top: 0.2em;
    padding-right: 0.5em;
+}
+
+.left img{
+  opacity: 1;
+   -webkit-transition-property: opacity;
+   -webkit-transition-duration: 0.4s;
+   -webkit-transition-timing-function: linear;
+   -webkit-transition-delay: 0.1s;
+}
+
+.left img:hover {
+  opacity: 0.5;
 }
 /*END LEFT PREVIEW SECTION*/
 
@@ -139,6 +163,17 @@ div#blogpost img {
    padding: 0.5em;
 }
 
+.main img{
+  opacity: 1;
+   -webkit-transition-property: opacity;
+   -webkit-transition-duration: 0.4s;
+   -webkit-transition-timing-function: linear;
+   -webkit-transition-delay: 0.1s;
+}
+
+.main img:hover {
+  opacity: 0.5;
+}
 /*END MAIN SECTION*/
 
 
