@@ -67,15 +67,18 @@ div#navigation a:hover{
 } 
 
 div#navigation th#headercenter {
-      max-width: 50%;
+      max-width: 70%;
       border-bottom: solid white 2px;
       border-left: double white 10px;
       border-right: double white 10px;
       font-weight: thin;
-      font-size: 25px;
+      font-size: 40px;
+      padding-left: 1em;
+      padding-right: 1em;
 }
 
 #headercenter {
+  font-size: fill;
   width: 50%;
    -webkit-transition-property: width;
    -webkit-transition-duration: 0.4s;
@@ -85,8 +88,8 @@ div#navigation th#headercenter {
 }
 
 #headercenter:hover{
-  width: 60%;
-  border-color: red
+  font-size: fill;
+  width: 70%;
 }
   
 /*END HEADER SECTION*/
@@ -190,9 +193,10 @@ footer {
    width: 100%;
    color: white;
    background-color: black;
-   padding-top: 0em;
+   padding-top: 1em;
    padding-left: 1em;
    font-family: lato;
+   vertical-align: center
    }
 
 form#search {
@@ -203,7 +207,7 @@ form#search {
    font-family: lato;
 }   
 
-div#footer li{
+li{
    width:155px;
    display:inline;
    padding-right: 1em;
@@ -212,6 +216,35 @@ div#footer li{
    vertical-align: center;
 }
 
+div#footer input{
+  padding-top: 0em;
+  background: white;
+  -webkit-transition: background 15s linear 0.2s;
+  width: 10%;
+  -webkit-transition: width 2s ease;
+
+}
+
+div#footer input:hover {
+  background: yellow;
+  width: 20%;
+}
+
 div#footer ul {
    padding-left: 4em;
+}
+
+.footer img{
+  height: 35px;
+   -webkit-transition-property: height;
+   -webkit-transition-duration: 0.1s;
+   -webkit-transition-timing-function: linear;
+   -webkit-transition-delay: 0s;
+   width: 35px;
+   -webkit-transition: width 0.1s linear 0s;
+}
+
+.footer img:hover {
+  height: 40px;
+  width: 40px;
 }
