@@ -8,6 +8,11 @@ body {
    background-color: black;
 }
 
+@font-face {
+  font-family: Lato;
+   font-src: url(lato/lato-hairline.ttf);
+}
+
 /*HEADER SECTION*/
 
 .top {
