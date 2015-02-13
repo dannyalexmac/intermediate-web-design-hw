@@ -186,7 +186,7 @@ div#intro img {
 	 color:white;
 	 font-family: lato-hairline;
 	 font-size: 13px;
-	 width: 80%;
+	 width: 50%;
 	 padding-top: 0.3em;
 }
 div#blogpost img {
@@ -206,12 +206,12 @@ footer {
 	 position: fixed;
 	 left: 0px;
 	 bottom: 0px;
-	 height:80px;
+	 height:30px;
 	 width: 100%;
 	 color: white;
 	 background-color: black;
 	 padding-top: 0em;
-	 padding-left: 1em;
+	 padding-left: 0em;
 	 font-family: lato-hairline;
 	 vertical-align: middle;
 	 }
@@ -220,8 +220,6 @@ form#search {
 	vertical-align: middle;
 	 text-align: right;
 	 color: white;
-	 padding-right: 15em;
-	 margin-top: -3em;
 	 font-family: lato;
 }   
 
@@ -244,7 +242,6 @@ div#footer input{
 }
 
 div#footer input:hover {
-	vertical-align: middle;
 	width: 20%;
 }
 
@@ -269,3 +266,37 @@ div#footer ul {
 	width: 40px;
 	vertical-align: middle;
 }
+/*end footer*/
+
+
+
+/*start iphone 6 interactive design*/
+
+@media screen and (min-width: 5px) and (max-width: 700px) {
+	.top {
+		width: 30%;
+	}
+	.homepage { 
+		background: black;
+	}
+	.subpage {
+		background: black;
+		float: none;
+	}
+	.footer {
+		height: 50px;
+	}
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 2048px) {
+	.top {
+		width: 70%;
+	}
+	.footer {
+		height: 70%;
+	}
+
+}
+
+
