@@ -1,4 +1,9 @@
 <!DOCTYPE css>
+@font-face {
+	font-family: lato-hairline;
+	 font-src: url(lato/lato-hairline.ttf);
+}
+
 html {
 
 }
@@ -13,10 +18,7 @@ body.subpage {
 	background-color: black;
 }
 
-@font-face {
-	font-family: lato-hairline;
-	 font-src: url(lato/lato-hairline.ttf);
-}
+
 
 /*HEADER SECTION*/
 
