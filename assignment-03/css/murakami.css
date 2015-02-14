@@ -309,7 +309,10 @@ div#footer ul {
 		position: relative;
 		height: 50%;
 	}
+}
 
+@media screen and (min-width: 1334px) and (max-width: 2048px) {
+	
 }
 
 
