@@ -1,7 +1,7 @@
 <!DOCTYPE css>
 @font-face {
-	font-family: lato-hairline;
-	 font-src: url(lato/lato-hairline.ttf);
+	font-family: Lato-Hairline;
+	 font-src: url(Lato-Hairline.ttf);
 }
 
 html {
@@ -23,6 +23,7 @@ body.subpage {
 /*HEADER SECTION*/
 
 .top {
+		font-family: Lato-Hairline;
 		position:absolute;
 		left:0; right:0;
 		height: 92px;
@@ -171,6 +172,7 @@ div#intro img {
 		color:white;
 		padding-left: 0.5em;
 		border-left: white solid 0em;
+		font-family: Lato-Hairline;
 }
 
 .main p#date {
