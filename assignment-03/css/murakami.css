@@ -113,6 +113,7 @@ div#navigation th#headercenter {
 	 font-family: lato-light;
 	 font-size: 18px;
 	 border-top: white solid 0.1em;
+	 border-top-length: 20em; 
 
 }
 .left p#descrip {
@@ -188,6 +189,11 @@ div#intro img {
 	 width: 500px;
 	 padding-top: 0.3em;
 }
+.main p#blogtext:first-child:first-letter {
+	float: left;
+	color: white;
+	size: 17px;
+}
 div#blogpost img {
 	 float: left;
 	 padding-right: 0.5em;
@@ -236,13 +242,13 @@ div#footer input{
 	vertical-align: middle;
 	background: white;
 	-webkit-transition: background 15s linear 0.2s;
-	width: 40%;
+	width: 15%;
 	-webkit-transition: width 2s ease;
-	vertical-align: middle;
+	text-align: right;
 }
 
 div#footer input:hover {
-	width: 70%;
+	width: 25%;
 }
 
 div#footer ul {
@@ -274,7 +280,6 @@ div#footer ul {
 
 @media screen and (min-width: 5px) and (max-width: 1334px) {
 	.top {
-		background-color: black;
 		padding-bottom: 3em;
 	}
 	.main {
@@ -284,18 +289,21 @@ div#footer ul {
 		width: auto;
 		vertical-align: center;
 		margin: auto;
+		padding-left: 5em;
 	}
 	.main p#blogtext {
-		width: 60%;
+		width: 70%;
 	}	
 	.left {	
   		position: relative;
-  		display: inline;
+  		display: inline vertical;
   		width: auto;
-  		padding-top: 200px;
 	}
 	.left p#descrip {
 		width: 60%;
+	}
+	.left p#date {
+		width: 65%;
 	}
 	.footer {
 		position: relative;
