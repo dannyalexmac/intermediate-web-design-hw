@@ -147,7 +147,7 @@ div#intro img {
 .left a {
 	color: white;
 	text-decoration: none;
-	font-size: 13px
+	font-size: 13px;
 	 -webkit-transition-property: font-size;
 	 -webkit-transition-duration: 0.4s;
 	 -webkit-transition-timing-function: linear;
