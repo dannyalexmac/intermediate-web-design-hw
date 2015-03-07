@@ -37,28 +37,69 @@
 <script type="text/javascript">
 
 function check_info() {
-    var x = document.forms["myForm"]["username"].value;
-    if (x == null || x == "") {
+    var firstname = document.forms["myForm"]["firstname"].value;
+    var lastname = document.forms["myForm"]["lastname"].value;
+    var emailaddress = document.forms["myForm"]["emailaddress"].value;
+    var username = document.forms["myForm"]["username"].value;
+    var password = document.forms["myForm"]["password"].value;
+    var verifypassword = document.forms["myForm"]["verifypassword"].value;
+    var favoritecolor = document.forms["myForm"]["favoritecolor"].value;
+
+    if (firstname || lastname || emailaddress || username || password || verifypassword || favoritecolor == null || "") {
         alert("All fields must be filled out");
         return false;
+    }
+    else {
+      return true;
+    }
+}
+
+
+function passwordmatch () {
+    var firstname = document.forms["myForm"]["firstname"].value;
+    var lastname = document.forms["myForm"]["lastname"].value;
+    var emailaddress = document.forms["myForm"]["emailaddress"].value;
+    var username = document.forms["myForm"]["username"].value;
+    var password = document.forms["myForm"]["password"].value;
+    var verifypassword = document.forms["myForm"]["verifypassword"].value;
+    var favoritecolor = document.forms["myForm"]["favoritecolor"].value;
+
+    if (password != verifypassword) {
+      alert("Passwords must match!")
+      return false
+    }
+    else {
+      return true;
     }
 }
 </script>
 
 
-
 <div id="form" class="main">
-<form name="myForm" action="submission.html" method="post" onsubmit="return check_info()">
+<form name="myForm" action="submission.html" method="post" onsubmit="return !!(check_info() & passwordmatch());">
  <fieldset>
     <legend>Sign Up For Our Newsletter</legend>
 
-      First Name: <input id="firstname" type="text"><br><br>
-      Last Name: <input id="lastname" type="text"><br><br>
-      Email Address: <input id="emailaddress" type="text"><br><br>
-      Username: <input id="username" type="text" name="username"><br><br>
-      Password: <input id="password" type="password"><br><br>
-      Verify Password: <input id="verifypassword" type="text"><br><br>
-      Favorite Color: <input id="favoritecolor" type="text"><br><br>
+      First Name: <input id="firstname" type="text" minlength="2" required><br><br>
+
+      Last Name: <input id="lastname" type="text" minlength="2" required><br><br>
+
+      Email Address: <input id="emailaddress" type="email" required><br><br>
+
+      Username: <input id="username" type="text" name="username" minlength="8" required><br><br>
+
+      Password: <input id="password" type="password" minlength="9" required="number"><br><br>
+
+      Verify Password: <input id="verifypassword" type="password" minlength="9" required="number"><br><br>
+
+      <form id="form" class="main" required>
+      Favorite Color: <br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="blue">Blue<br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="green">Green<br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="black">Black<br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="white">White<br>
+      <br>
+      </form>
 
       <input type="submit" value="Submit">
       <button type="reset" value="Reset">Reset</button>
