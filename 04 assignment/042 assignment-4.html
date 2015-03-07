@@ -1,23 +1,50 @@
 <!--
 
+This is Assignment 4 for Intermediate Web Design (CMP 3011). Please read the instructions below.
+
+JAVASCRIPT EXERCISE
+Please perform the following exercises inside this file (unless directed otherwise), adding the task number in a comment above the completed exercise.
+
+01) Using Javascript, add a paragraph of lorem ipsum (get some at lipsum.com, if needed) above the bulleted list at the bottom of the page.
 
 
-05) Set the text content of the element with an ID of "qv" to "Quicker Viewer". ***
+02) Define a variable and give it a value of 'today'. Write the value of the variable on the line that says "<h2>Get involved</h2>" so that it reads "<h2>Get involved today</h2>".
 
-06) Create an array of seven pieces of fruit, then print the second and fifth pieces of fruit anywhere in the body of the document. ***
+
+03) On the line that says "Brackets has many users!", replace "many" (just delete the word) with  a JavaScript snippet that multiples 10,000 by 10,000 and divides the sum by 5 and outputs the result. 
+
+
+04) Get the text content of the element with an ID of "extension" and print that content to the console log.
+
+
+05) Set the text content of the element with an ID of "qv" to "Quicker Viewer".
+
+
+06) Create an array of seven pieces of fruit, then print the second and fifth pieces of fruit anywhere in the body of the document. 
+
 
 07) Replace the contents of the <h3> tags with a function which takes one argument: the text to go into the <h3> tags. The function must also print the <h3> tags.
 
-08) In the same function as #7, use a method from the string object to convert the text passed into the function to uppercase.
+
+**i don't understand
+
+08) In the same function as #7, use a method from the string object to convert the text passed into the function to uppercase. 
+
+**i don't understand
+
 
 09) Output the width and height of the browser window anywhere in the body of the document, labeling the dimensions accordingly. For example, "width: 1204, height: 952".
 
+
 10) Change the background color of the document. Hint: put the code above the </body> tag.
+
 
 11) Create a link that, when clicked, opens an alert dialogue box with the URL of the current webpage.
 
+
 12) Reusing code from exercise #6, create a function to output a random piece of fruit from the fruit array. This function must live in an external file. Hint: use the Math object.
 
+**no idea
 
 OBJECTIVE
 The purpose of this assignment is for students to practice working with several JavaScript language constructs: statements, variables, arrays, functions, and objects. In addition, students will gain a greater understanding of properties, methods, and global objects.
@@ -44,14 +71,6 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <!-- <link rel="stylesheet" href="main.css"> -->
     </head>
-
-
-    <script type="text/javascript">function changeBackground(color) {
-        document.body.style.background = color;
-        }
-        //change background color
-    </script>
-
     <body>
         
         <h1>GETTING STARTED WITH BRACKETS</h1>
@@ -61,13 +80,11 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             MADE WITH <3 AND JAVASCRIPT
         -->
         
-        <!--task 3-->
         <p>Brackets has 
-           
+            <!--3-->
             <script type="text/javascript">
                 document.write(10000 * 10000 / 5);
-             </script>
-
+            </script>
         users!</p>
 
 
@@ -186,13 +203,6 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         </p>
         
         <h3 id="qv">Quick View</h3>
-
-        <script type="text/javascript">
-            //number 5 hw
-            document.getElementById("qv");
-            document.write("Quick Viewer");
-        </script>
-
         <p>
             For those of us who haven't yet memorized the color equivalents for HEX or RGB values, Brackets makes
             it quick and easy to see exactly what color is being used. In either CSS or HTML, simply hover over any
@@ -211,10 +221,6 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         
         <h3 id="extension">Need something else? Try an extension!</h3>
 
-        <!--step 4-->
-        <script type="text/javascript">
-            document.getElementById("extension")console.log;
-        </script>
 
         <p>
             In addition to all the goodness that's built into Brackets, our large and growing community of
@@ -228,13 +234,13 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         <!--
             LET US KNOW WHAT YOU THINK
         -->
-        <!--step 2 -->
+
+        <!--2-->
         <h2>Get involved</h2> <h2 id="today"></h2>
 
         <script type="text/javascript">
             document.getElementById("today").innerHTML = "today";
         </script>
-
 
         <p>
             Brackets is an open-source project. Web developers from around the world are contributing to build 
@@ -242,13 +248,11 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             Let us know what you think, share your ideas or contribute directly to the project.
         </p>
 
-        <!-- step 1 -->
+
+        <!--1-->
         <script type="text/javascript">
             document.write("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
         </script>  
-
-
-
 
         <ul>
             <li><a href="http://brackets.io">Brackets.io</a></li>
@@ -261,35 +265,63 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
         </ul>
         
+        <p id='screendimensions'></p>
+
+        <button onclick="alertBox()">alert box</button>
 
 
 
 
+
+
+
+
+
+
+
+        <!--6-->
         <script type="text/javascript">
 
-
-        var x = today;
-
-        </script>
-
-
-        <button onclick="myFunction()">This brings up an alert box</button>
-        <script type="text/javascript">
-            //alert box
-            function myFunction() {
-            alert("assignment 04");
-            }
-        </script>
-
-        <br><br><br>
-
-        <script type="text/javascript">
-        //fruit array #6
         var fruit = ['pineapple', 'apple', 'pear', 'banana', 'lefsa', "grape"];
+
         document.write(fruit[1], " ", fruit[3]);
+
         </script>
 
+
+        
+        <script type="text/javascript">
+            // 4
+            var printConsole = document.getElementById("extension").textContent;
+
+            console.log(printConsole)
+
+
+            // 5
+            var qv = document.getElementById("qv");
+            qv.textContent = "Quicker Viewer";
+
+
+            // 7 + 8
+
+
+            //9
+            var width = 'total width: ' + screen.width ;
+            var height = 'total height: ' + screen.height ;
+
+            document.getElementById('screendimensions').innerHTML =width + ' ' + height;
+
+            //10
+            document.body.style.backgroundColor = 'red';
+
+            //11
+            function alertBox() {
+                alert(document.URL);
+            }
+
+        </script>
     </body>
+
 </html>
 <!--
 
