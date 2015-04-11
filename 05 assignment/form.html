@@ -31,7 +31,7 @@
 
 
 
-
+<!--start form-->
 
 
 <script type="text/javascript">
@@ -72,11 +72,17 @@ function passwordmatch () {
       return true;
     }
 }
+
+
+
 </script>
 
 
+<!--form javascript separation-->
+
+
 <div id="form" class="main">
-<form name="myForm" action="submission.html" method="post" onsubmit="return !!(check_info() & passwordmatch());">
+<form if= "myForm" name="myForm" action="submission.html" method="post" onsubmit="return !!(check_info() & passwordmatch());">
  <fieldset>
     <legend>Sign Up For Our Newsletter</legend>
 
@@ -109,7 +115,7 @@ function passwordmatch () {
 </div>  
 
 
-
+<!--end form-->
 
 
 
