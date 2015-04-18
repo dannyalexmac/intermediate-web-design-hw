@@ -1,0 +1,15 @@
+<!DOCTYPE css>
+
+/*header*/
+
+/*end header*/
+
+div.login {
+   background: url("images/fresh.jpg");
+}
+
+div.menu {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    font-color:black;
+}
