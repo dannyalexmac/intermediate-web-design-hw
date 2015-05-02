@@ -2,14 +2,30 @@
 
 /*header*/
 
-/*end header*/
-
-div.login {
-   background: url("images/fresh.jpg");
-}
-
+/*menu*/
 div.menu {
     border-top: 2px black solid;
     border-bottom: 2px black solid;
     font-color:black;
 }
+/*menu*/
+
+/*end header*/
+
+
+
+/*login page*/
+div.login {
+   background: url("images/fresh.jpg");
+}
+/*login page*/
+
+
+
+/*recipeinput*/
+div#recipeinput {
+	margin-left: 20em;
+	position: absolute;
+	width: 70%;
+}
+

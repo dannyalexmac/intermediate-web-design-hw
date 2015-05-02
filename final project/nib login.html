@@ -26,10 +26,34 @@
 </table>
 </div>
 
-<div class="login">
 
 
-</div>
+
+
+
+
+
+
+<div id="form" class="main">
+<form if= "myForm" name="myForm" action="submission.html" method="post" onsubmit="return !!(check_info() & passwordmatch());">
+ <fieldset>
+    <legend>SIGN IN</legend>
+
+      Username: <input id="username" type="text" name="username" minlength="8" required><br><br>
+
+      Password: <input id="password" type="password" minlength="9" required="number"><br><br>
+      <br>
+      </form>
+
+      <input type="submit" value="Submit">
+      <button type="reset" value="Reset">Reset</button>
+
+ </fieldset>
+</form>
+</div>  
+
+
+
 
 </body>
 </html>
